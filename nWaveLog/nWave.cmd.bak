@@ -1,0 +1,1117 @@
+wvRestoreSignal -win $_nWave1 "/home/host/temp/N26091623/build/add.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvResizeWindow -win $_nWave1 -1 27 1718 825
+wvResizeWindow -win $_nWave1 -1 27 1716 825
+wvSetCursor -win $_nWave1 11571699.395723 -snap {("IF" 3)}
+wvSetMarker -win $_nWave1 -keepViewRange -name "M1" 11571759.065445
+wvSetMarker -win $_nWave1 -keepViewRange -name "M1" 11571759.065445
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetSignalFilter -win $_nWave1 "*reg_data1"
+wvSetPosition -win $_nWave1 {("WB" 2)}
+wvSetPosition -win $_nWave1 {("WB" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("WB" 2)}
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvGetSignalSetSignalFilter -win $_nWave1 "*reg_data2"
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 4)}
+wvSetPosition -win $_nWave1 {("WB" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "WB" 4 )} 
+wvSetPosition -win $_nWave1 {("WB" 4)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 2)}
+wvSetPosition -win $_nWave1 {("WB" 1)}
+wvSetPosition -win $_nWave1 {("WB" 0)}
+wvSetPosition -win $_nWave1 {("MEM" 5)}
+wvSetPosition -win $_nWave1 {("MEM" 4)}
+wvSetPosition -win $_nWave1 {("MEM" 3)}
+wvSetPosition -win $_nWave1 {("MEM" 2)}
+wvSetPosition -win $_nWave1 {("MEM" 1)}
+wvSetPosition -win $_nWave1 {("MEM" 0)}
+wvSetPosition -win $_nWave1 {("EX" 2)}
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvSetPosition -win $_nWave1 {("EX" 0)}
+wvSetPosition -win $_nWave1 {("ID" 7)}
+wvSetPosition -win $_nWave1 {("ID" 6)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("ID" 6)}
+wvSetPosition -win $_nWave1 {("ID" 7)}
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvSetPosition -win $_nWave1 {("WB" 3)}
+wvSetPosition -win $_nWave1 {("WB" 2)}
+wvSetPosition -win $_nWave1 {("WB" 1)}
+wvSetPosition -win $_nWave1 {("WB" 0)}
+wvSetPosition -win $_nWave1 {("MEM" 5)}
+wvSetPosition -win $_nWave1 {("MEM" 4)}
+wvSetPosition -win $_nWave1 {("MEM" 3)}
+wvSetPosition -win $_nWave1 {("MEM" 2)}
+wvSetPosition -win $_nWave1 {("MEM" 1)}
+wvSetPosition -win $_nWave1 {("MEM" 0)}
+wvSetPosition -win $_nWave1 {("EX" 2)}
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvSetPosition -win $_nWave1 {("EX" 0)}
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvSetPosition -win $_nWave1 {("ID" 9)}
+wvSelectSignal -win $_nWave1 {( "ID" 7 )} 
+wvSetPosition -win $_nWave1 {("ID" 7)}
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvSelectSignal -win $_nWave1 {( "ID" 6 )} 
+wvSelectSignal -win $_nWave1 {( "ID" 8 )} 
+wvSelectSignal -win $_nWave1 {( "ID" 9 )} 
+wvSelectSignal -win $_nWave1 {( "ID" 8 )} 
+wvSetCursor -win $_nWave1 11579158.111010 -snap {("ID" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/register1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetSignalFilter -win $_nWave1 "*ex_reg_data2"
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("ID" 8)}
+wvSetPosition -win $_nWave1 {("MEM" 3)}
+wvGetSignalSetSignalFilter -win $_nWave1 "*ex_reg_data1"
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 3 )} 
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 3 )} 
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "EX" 4 )} 
+wvSelectSignal -win $_nWave1 {( "EX" 3 )} 
+wvSetCursor -win $_nWave1 11580709.523790 -snap {("EX" 2)}
+wvSetCursor -win $_nWave1 11579277.450455 -snap {("EX" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/register1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetSignalFilter -win $_nWave1 "*ex_pc"
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvSetPosition -win $_nWave1 {("MEM" 0)}
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 1 )} 
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 11579158.111010 -snap {("EX" 0)}
+wvSetCursor -win $_nWave1 11582171.431986 -snap {("ID" 8)}
+wvSetCursor -win $_nWave1 11579158.111010 -snap {("ID" 8)}
+wvSelectSignal -win $_nWave1 {( "EX" 4 )} 
+wvSelectSignal -win $_nWave1 {( "EX" 4 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "EX" 4 )} 
+wvSetRadix -win $_nWave1 -format Hex
+wvSetCursor -win $_nWave1 11582231.101708 -snap {("ID" 8)}
+wvSetCursor -win $_nWave1 11579128.276149 -snap {("EX" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/register1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetSignalFilter -win $_nWave1 "*alu_result"
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 1)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 6 )} 
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/register1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetSignalFilter -win $_nWave1 "*alu_in1"
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 6 )} 
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvGetSignalSetSignalFilter -win $_nWave1 "*alu_in2"
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 6 )} 
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/ID_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/ID_opcode\[6:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+{/top_tb/TOP/cpu/MEM_DM_DO\[31:0\]} \
+{/top_tb/TOP/cpu/WB_Utype_rd_result\[31:0\]} \
+{/top_tb/TOP/cpu/WB_pc_add4\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "EX" 6 )} 
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvGetSignalClose -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "EX" 8 )} 
+wvSelectSignal -win $_nWave1 {( "EX" 7 )} 
+wvSelectSignal -win $_nWave1 {( "EX" 6 )} 
+wvSelectSignal -win $_nWave1 {( "EX" 8 )} 
+wvSetCursor -win $_nWave1 11582231.101708 -snap {("EX" 1)}
+wvScrollDown -win $_nWave1 1
+wvSetCursor -win $_nWave1 11580769.193512 -snap {("ID" 8)}
+wvSetCursor -win $_nWave1 11580679.688929 -snap {("ID" 8)}
+wvSetCursor -win $_nWave1 11580828.863234 -snap {("ID" 9)}
+wvSetCursor -win $_nWave1 11582231.101708 -snap {("EX" 7)}
+wvSetCursor -win $_nWave1 11583812.349349 -snap {("EX" 7)}
+wvSetCursor -win $_nWave1 11582141.597125 -snap {("EX" 7)}
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "WB" 1 )} 
+wvSelectSignal -win $_nWave1 {( "WB" 2 )} 
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvSelectSignal -win $_nWave1 {( "WB" 4 )} 
+wvSelectSignal -win $_nWave1 {( "ID" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 7)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSelectSignal -win $_nWave1 {( "ID" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 7)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSelectSignal -win $_nWave1 {( "ID" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 7)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSelectSignal -win $_nWave1 {( "ID" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 7)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSelectSignal -win $_nWave1 {( "WB" 4 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSelectSignal -win $_nWave1 {( "WB" 3 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSelectSignal -win $_nWave1 {( "WB" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetCursor -win $_nWave1 11571639.726001 -snap {("IF" 3)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/register1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetSignalFilter -win $_nWave1 "*if*"
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvGetSignalSetSignalFilter -win $_nWave1 "*if_pc"
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvGetSignalSetSignalFilter -win $_nWave1 "*if_pc"
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvGetSignalSetSignalFilter -win $_nWave1 "*id_inst"
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("EX" 6)}
+wvSetPosition -win $_nWave1 {("EX" 3)}
+wvSetPosition -win $_nWave1 {("ID" 4)}
+wvSetPosition -win $_nWave1 {("ID" 3)}
+wvSetPosition -win $_nWave1 {("ID" 2)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvSetPosition -win $_nWave1 {("ID" 0)}
+wvAddSignal -win $_nWave1 "/top_tb/TOP/cpu/ID_inst\[31:0\]"
+wvSetPosition -win $_nWave1 {("ID" 0)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 11571669.560862 -snap {("ID" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/register1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetSignalFilter -win $_nWave1 "*id_pc"
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvSetPosition -win $_nWave1 {("EX" 2)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvSetPosition -win $_nWave1 {("ID" 0)}
+wvSetPosition -win $_nWave1 {("IF" 4)}
+wvSetPosition -win $_nWave1 {("ID" 0)}
+wvAddSignal -win $_nWave1 "/top_tb/TOP/cpu/ID_pc\[31:0\]"
+wvSetPosition -win $_nWave1 {("ID" 0)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"IF" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/top_tb/TOP/cpu/pc1/pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/RegWrite} \
+}
+wvAddSignal -win $_nWave1 -group {"ID" \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[5\]\[31:0\]} \
+{/top_tb/TOP/cpu/register1/regs\[6\]\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/reg_data2\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"EX" \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_A\[1:0\]} \
+{/top_tb/TOP/cpu/forward1/forward_B\[1:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_reg_data2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in2\[31:0\]} \
+{/top_tb/TOP/cpu/ALU_in1\[31:0\]} \
+{/top_tb/TOP/cpu/EX_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"MEM" \
+{/top_tb/TOP/cpu/MEM_pc\[31:0\]} \
+{/top_tb/TOP/cpu/DM_A\[13:0\]} \
+{/top_tb/TOP/cpu/MEM_store\[2:0\]} \
+{/top_tb/TOP/cpu/MEM_MemWrite\[3:0\]} \
+{/top_tb/TOP/cpu/store_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"WB" \
+{/top_tb/TOP/cpu/WB_ALU_result\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSetPosition -win $_nWave1 {("ID" 1)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "ID" 1 )} 
+wvSetCursor -win $_nWave1 11574593.377254 -snap {("ID" 2)}
+wvSaveSignal -win $_nWave1 "/home/host/temp/N26091623/build/add_five_stage.rc"

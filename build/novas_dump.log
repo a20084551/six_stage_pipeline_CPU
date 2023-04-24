@@ -1,0 +1,213 @@
+ncsim(64) 15.20-p001
+Linux 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64
+CPU cores: 4
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+XDG_VTNR=1
+INNOVUS_HOME=/home/cadence/INNOVUS
+XDG_SESSION_ID=1
+SSH_AGENT_PID=3122
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-myCPBbdJAj,guid=11741d303e63fbfe05bf434e642c65bd
+MGC_CALIBRE_REALTIME_VIRTUOSO_SAVE_MESSENGER_CELL=1
+HOSTNAME=IC_EDA
+MILKWAY_HOME=/home/synopsys/milkway_201506
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+NOVAS_HOME=/home/synopsys/verdi/Verdi_O-2018.09-SP2
+TERM=xterm-256color
+XDG_MENU_PREFIX=gnome-
+IDENTIFY_HOME=/home/synopsys/identify/N-2018.03-SP1
+VTE_VERSION=5204
+SHELL=/bin/bash
+HISTSIZE=1000
+MAKEFLAGS= -- FSDB=2
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9db0774f_f9b9_4628_81d8_6a3e48a5366a
+QUESTASIM_HOME=/home/mentor/questasim
+QTDIR=/usr/lib/qt-3.3
+QTINC=/usr/lib/qt-3.3/include
+NOVAS=/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64
+MENTOR_HOME=/home/mentor/
+IMSETTINGS_MODULE=none
+CUSTOMCOMPILER_HOME=/home/synopsys/customcompiler/N-2017.12-SP1-2
+QT_GRAPHICSSYSTEM_CHECKED=1
+USER=host
+MAKEOVERRIDES=${-*-command-variables-*-}
+LD_LIBRARY_PATH=/home/mentor//calibre2019/aoj_cal_2019.3_15.11/shared/pkgs/icv/tools/calibre_client/lib/64:/home/cadence/INCISIVE152/tools.lnx86/lib:/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/IUS/LINUX64/boot
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+GNOME_TERMINAL_SERVICE=:1.105
+FORMALITY_HOME=/home/synopsys/fm/O-2018.06-SP1
+NOVAS_PLI=/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64
+MAKE_TERMOUT=/dev/pts/0
+SSH_AUTH_SOCK=/run/user/1001/keyring/ssh
+novas_args=-P /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/novas.tab /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a
+FSDB=2
+DVE_HOME=/home/synopsys/vcs-mx/O-2018.09-1
+MAKELEVEL=1
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2991,unix/unix:/tmp/.ICE-unix/2991
+USERNAME=host
+SNPSLMD_LICENSE_FILE=27000@IC_EDA
+MMSIMHOME=/home/cadence/MMSIM151
+MFLAGS=
+GNOME_SHELL_SESSION_MODE=classic
+MAIL=/var/spool/mail/host
+PATH=/home/cadence/INCISIVE152/tools/bin/64bit:/home/cadence/INCISIVE152/tools/bin/64bit:/home/cadence/INCISIVE152/tools/bin/64bit:/home/Xilinx/SDK/2019.1/bin:/home/Xilinx/SDK/2019.1/gnu/microblaze/lin/bin:/home/Xilinx/SDK/2019.1/gnu/arm/lin/bin:/home/Xilinx/SDK/2019.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-linux/bin:/home/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-none/bin:/home/Xilinx/SDK/2019.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/Xilinx/SDK/2019.1/tps/lnx64/cmake-3.3.2/bin:/home/Xilinx/Vivado/2019.1/bin:/home/Xilinx/DocNav:/home/Xilinx/SDK/2019.1/bin:/home/Xilinx/SDK/2019.1/gnu/microblaze/lin/bin:/home/Xilinx/SDK/2019.1/gnu/arm/lin/bin:/home/Xilinx/SDK/2019.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-linux/bin:/home/Xilinx/SDK/2019.1/gnu/aarch64/lin/aarch64-none/bin:/home/Xilinx/SDK/2019.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/Xilinx/SDK/2019.1/tps/lnx64/cmake-3.3.2/bin:/home/Xilinx/Vivado/2019.1/bin:/home/Xilinx/DocNav:/usr/lib/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/synopsys/customcompiler/N-2017.12-SP1-2/bin:/home/synopsys/fm/O-2018.06-SP1/bin:/home/synopsys/hspice/N-2017.12-SP2/hspice/bin:/home/synopsys/fpga/N-2018.03-SP1/bin:/home/synopsys/identify/N-2018.03-SP1/bin:/home/synopsys/icc/O-2018.06-SP1/bin:/home/synopsys/icc2/O-2018.06-SP1/bin:/home/synopsys/nlint/bin:/home/synopsys/wv/N-2017.12-SP2/bin:/home/synopsys/milkway_201506/bin/linux64:/home/synopsys/starrc/O-2018.06-SP1/bin:/home/synopsys/pts/O-2018.06-SP1/bin:/home/synopsys/syn/O-2018.06-SP1/bin:/home/synopsys/lc/O-2018.06-SP1/bin:/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME//bin:/home/synopsys/vcs-mx/O-2018.09-1/gui/dve/bin:/home/synopsys/vcs-mx/O-2018.09-1/bin:/home/synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/synopsys/scl/2018.06/linux64/bin::/home/mentor//calibre2019/aoj_cal_2019.3_15.11/bin:/home/cadence/IC617/tools/dfII/bin:/home/cadence/IC617/tools/plot/bin:/home/cadence/INCISIVE152/tools/bin:/home/cadence/MMSIM151/bin:/home/cadence/MMSIM151/tools/relxpert/bin:/home/cadence/INCISIVE152/bin:/home/cadence/INCISIVE152/tools.lnx86/bin:/home/cadence/INCISIVE152/tools.lnx86/dfII/bin:/home/cadence/INNOVUS/bin:/home/mentor/questasim/linux_x86_64:/home/Riscv_Tools/bin:/home/Riscv_Tools/riscv-gnu-toolchain/qemu-6.0.0/build/riscv32-linux-user:/home/host/riscv/bin:/home/host/.local/bin:/home/host/bin:/home/synopsys/customcompiler/N-2017.12-SP1-2/bin:/home/synopsys/fm/O-2018.06-SP1/bin:/home/synopsys/hspice/N-2017.12-SP2/hspice/bin:/home/synopsys/fpga/N-2018.03-SP1/bin:/home/synopsys/identify/N-2018.03-SP1/bin:/home/synopsys/icc/O-2018.06-SP1/bin:/home/synopsys/icc2/O-2018.06-SP1/bin:/home/synopsys/nlint/bin:/home/synopsys/wv/N-2017.12-SP2/bin:/home/synopsys/milkway_201506/bin/linux64:/home/synopsys/starrc/O-2018.06-SP1/bin:/home/synopsys/pts/O-2018.06-SP1/bin:/home/synopsys/syn/O-2018.06-SP1/bin:/home/synopsys/lc/O-2018.06-SP1/bin:/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME//bin:/home/synopsys/vcs-mx/O-2018.09-1/gui/dve/bin:/home/synopsys/vcs-mx/O-2018.09-1/bin:/home/synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/synopsys/scl/2018.06/linux64/bin::/home/mentor//calibre2019/aoj_cal_2019.3_15.11/bin:/home/cadence/IC617/tools/dfII/bin:/home/cadence/IC617/tools/plot/bin:/home/cadence/INCISIVE152/tools/bin:/home/cadence/MMSIM151/bin:/home/cadence/MMSIM151/tools/relxpert/bin:/home/cadence/INCISIVE152/bin:/home/cadence/INCISIVE152/tools.lnx86/bin:/home/cadence/INCISIVE152/tools.lnx86/dfII/bin:/home/cadence/INNOVUS/bin:/home/mentor/questasim/linux_x86_64:/home/Riscv_Tools/bin:/home/Riscv_Tools/riscv-gnu-toolchain/qemu-6.0.0/build/riscv32-linux-user:/home/host/riscv/bin
+DESKTOP_SESSION=gnome-classic
+PT_HOME=/home/synopsys/pts/O-2018.06-SP1
+QT_IM_MODULE=ibus
+VERDI_HOME=/home/synopsys/verdi/Verdi_O-2018.09-SP2
+CALIBRE_HOME=/home/mentor//calibre2019/aoj_cal_2019.3_15.11
+PWD=/home/host/temp/N26091623/build
+MGC_CALIBRE_LAYOUT_SERVER=127.0.0.1:9189
+XDG_SESSION_TYPE=x11
+VCS_HOME=/home/synopsys/vcs-mx/O-2018.09-1
+XMODIFIERS=@im=ibus
+MGC_CALIBRE_SAVE_ALL_RUNSET_VALUES=1
+LANG=zh_CN.UTF-8
+MGC_CALIBRE_SCHEMATIC_SERVER=127.0.0.1:9199
+GDM_LANG=zh_CN.UTF-8
+VCS_ARCH_OVERRIDE=linux
+KDEDIRS=/usr
+ICC_HOME=/home/synopsys/icc/O-2018.06-SP1
+CDSHOME=/home/cadence/IC617
+NLINT_HOME=/home/synopsys/nlint
+QEMU_HOME=/home/Riscv_Tools/riscv-gnu-toolchain/qemu-6.0.0
+XILINX_VIVADO=/home/Xilinx/Vivado/2019.1
+GDMSESSION=gnome-classic
+SPECMAN_HOME=/home/cadence/INCISIVE152/components/sn
+HISTCONTROL=ignoredups
+DBUS_STARTER_BUS_TYPE=session
+SHLVL=3
+RISCV=/home/host/riscv
+XDG_SEAT=seat0
+HOME=/home/host
+MGC_HOME=/home/mentor//calibre2019/aoj_cal_2019.3_15.11
+ICC2_HOME=/home/synopsys/icc2/O-2018.06-SP1
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+MGC_LICENSE_FILE=/home/mentor//license/license.dat
+CX_HOME=/home/synopsys/wv/N-2017.12-SP2
+CADHOME=/home/cadence
+MGC_LIB_PATH=/home/mentor//calibre2019/aoj_cal_2019.3_15.11/lib
+DC_HOME=/home/synopsys/syn/O-2018.06-SP1
+LOGNAME=host
+XDG_SESSION_DESKTOP=gnome-classic
+MAKE_TERMERR=/dev/pts/0
+SPYGLASS_HOME=/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/
+QTLIB=/usr/lib/qt-3.3/lib
+MGLS_LICENSE_FILE=/home/mentor//license/license.dat:/home/mentor/questasim/mentor.dat
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-myCPBbdJAj,guid=11741d303e63fbfe05bf434e642c65bd
+XDG_DATA_DIRS=/home/host/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+CDS_LIC_FILE=/home/cadence/license/cadence.dat
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SPECMAN_DIR=/home/cadence/INCISIVE152/components/sn/64
+SCL_HOME=/home/synopsys/scl/2018.06
+HSPICE_HOME=/home/synopsys/hspice/N-2017.12-SP2/hspice
+WINDOWPATH=1
+MGC_CALIBRE_REALTIME_VIRTUOSO_ENABLED=1
+DISPLAY=:0
+SYNPLIFY_HOME=/home/synopsys/fpga/N-2018.03-SP1
+XDG_RUNTIME_DIR=/run/user/1001
+LC_HOME=/home/synopsys/lc/O-2018.06-SP1
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+INCISIVE_HOME=/home/cadence/INCISIVE152
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+CALIBRE_ENABLE_SKILL_PEXBA_MODE=1
+STARC_HOME=/home/synopsys/starrc/O-2018.06-SP1
+COLORTERM=truecolor
+XAUTHORITY=/run/gdm/auth-for-host-hl9YPb/database
+_=/home/cadence/INCISIVE152/tools/bin/irun
+OLDPWD=/home/host/temp/N26091623
+_IRUNROOT_=/home/cadence/INCISIVE152/tools
+CDS_ARCH=lnx86
+NCRUNMODE=irun:./INCA_libs/irun.lnx8664.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/home/cadence/INCISIVE152/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=irun
+argv[1]=-64BIT
+argv[2]=-loadpli1
+argv[3]=debpli:novas_pli_boot
+argv[4]=/home/host/temp/N26091623/./sim/top_tb.sv
+argv[5]=+incdir+/home/host/temp/N26091623/./src+/home/host/temp/N26091623/./include+/home/host/temp/N26091623/./sim
+argv[6]=+define+prog0+FSDB_ALL
+argv[7]=-define
+argv[8]=CYCLE=15.0
+argv[9]=-define
+argv[10]=MAX=100000
+argv[11]=+access+r
+argv[12]=+prog_path=/home/host/temp/N26091623/./sim/prog0
+151 profile - 100
+          CPU/Mem usage: 0.110 sys,  0.180 user,  221.85M sys,  0.00M vm
+152 VC callback profile - scalar:0 vector:0
+153 Wed Apr  5 02:01:33 2023
+154 pliAppInit
+155 FSDB_GATE is disabled.
+156 Enable Parallel Dumping.
+157 pliAppMiscSet: New Sim Round
+158 pliEntryInit
+159 LIBSSCORE=found /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/IUS/LINUX64/boot/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+160 argv[0]: top.fsdb
+161 argv[0]: +struct
+162 argv[1]: +mda
+163 argv[2]: (handle)0x4f46608 top_tb.TOP
+164 FSDB Dumper for IUS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+165 (C) 1996 - 2019 by Synopsys, Inc.
+166 sps_call_fsdbDumpfile at 0 : /home/host/temp/N26091623/sim/top_tb.sv(89)
+167 argv[0]: top.fsdb
+168 *Verdi* : Create FSDB file 'top.fsdb'
+169 sps_call_fsdbDumpvars at 0 : /home/host/temp/N26091623/sim/top_tb.sv(90)
+170 argv[0]: +struct
+171 argv[1]: +mda
+172 argv[2]: (handle)0x4f465e8 top_tb.TOP
+173 *Verdi* : Begin traversing the scope (top_tb.TOP), layer (0).
+174 *Verdi* : Enable +struct and +mda dumping.
+175 *Verdi* : End of traversing.
+176 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.130 sys,  0.420 user,  334.13M sys,  0.00M vm
+                   incr: 0.020 sys,  0.230 user,  30.99M sys,  0.00M vm
+                   accu: 0.020 sys,  0.230 user,  30.99M sys,  0.00M vm
+              accu incr: 0.020 sys,  0.230 user,  30.99M sys,  0.00M vm
+
+          Count usage: 131655 var,  131471 idcode,  131479 callback
+                 incr: 131655 var,  131471 idcode,  131479 callback
+                 accu: 131655 var,  131471 idcode,  131479 callback
+            accu incr: 131655 var,  131471 idcode,  131479 callback
+177 VC callback profile - scalar:0 vector:0
+178 Wed Apr  5 02:01:33 2023
+179 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.130 sys,  0.480 user,  342.76M sys,  0.00M vm
+                   incr: 0.000 sys,  0.060 user,  8.63M sys,  0.00M vm
+                   accu: 0.020 sys,  0.290 user,  39.62M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.060 user,  8.63M sys,  0.00M vm
+
+          Count usage: 131655 var,  131471 idcode,  131479 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 131655 var,  131471 idcode,  131479 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+180 VC callback profile - scalar:230 vector:131241
+181 Wed Apr  5 02:01:33 2023
+182 End of simulation at 12666750
+183 VC callback profile - scalar:280666 vector:733531
+184 Wed Apr  5 02:01:33 2023
+185 Begin FSDB profile info:
+186 FSDB Writer : bc1(280666) bcn(733531) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.114166) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+187 End FSDB profile info
+188 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:5 BlockUsed:6
+189                        ProduceTime:0.874963046 ConsumerTime:0.067552100 Buffer:64MB
+190 SimExit
+191 Sim process exit

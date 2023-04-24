@@ -1,0 +1,27 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++prog_path=/home/host/temp/N26091623/./sim/prog0
++incdir+/home/host/temp/N26091623/./src+/home/host/temp/N26091623/./include+/home/host/temp/N26091623/./sim
++define+prog0+FSDB_ALL
++access+r
+-MESSAGES
++EMGRLOG
+irun.log
+-XLSTIME
+1680631291
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun(64)	15.20-p001"
+-XLNAME
+./INCA_libs/irun.lnx8664.15.20.nc/IC_EDA_4173

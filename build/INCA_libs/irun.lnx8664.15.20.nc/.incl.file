@@ -1,0 +1,13 @@
+./top.sv
+./cpu.sv
+./pc.sv
+./controller.sv
+./register.sv
+./extend.sv
+./hazard.sv
+./ALU.sv
+./forward.sv
+./SRAM_wrapper.sv
+./SRAM/SRAM_rtl.sv
+/home/host/temp/N26091623/./src/SRAM/SRAM_rtl.sv
+/home/host/temp/N26091623/./include/SRAM/SRAM_rtl.sv

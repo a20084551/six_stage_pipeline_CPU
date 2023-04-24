@@ -1,0 +1,3 @@
+Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux IC_EDA 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64)
+au time 14.399948 1.749690 0.478606 delta 442949632 442949632 total 868036608 868036608
